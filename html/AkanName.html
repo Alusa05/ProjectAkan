@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        
+            <a href="welcomingpage.html">Welcome</a>
+           <a href="AkanName.html">Home</a>
+            <a href="gallery">Gallery</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+     
+    </nav>
+
+    <!-- Header and description -->
+    <header>
+        <h1>Welcome to the Akan Name Generator</h1>
+        <p>Discover your unique Akan name based on your birth-date and gender!</p>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <div class="card">
+            <form id="name-form">
+                <h2>Kindly fill in your details</h2>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="result"></div>
+    </main>
+
+    <!-- Script -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

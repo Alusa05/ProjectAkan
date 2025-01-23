@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to the Akan Name Finder</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: #fff;
+    }
+    
+
+    .welcome-header {
+      height: 100vh;
+      background: url('Images/Ghana.jpg') no-repeat center center/cover; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .welcome-header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    }
+
+    .welcome-content {
+      z-index: 1;
+      text-align: center;
+      padding: 2em;
+    }
+
+    .welcome-content h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin-bottom: 0.5em;
+    }
+
+    .welcome-content p {
+      font-size: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
+    .start-button {
+      background-color: #fcd116;
+      color: #000;
+      text-decoration: none;
+      padding: 0.8em 2em;
+      border-radius: 5px;
+      font-size: 1.2em;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .start-button:hover {
+      background-color: #ce1126;
+      color: #fff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header class="welcome-header">
+    <div class="welcome-content">
+      <h1>Discover Your Spirit Name</h1>
+      <p>Discover your Akan name based on the day of the week you were born and your gender.</p>
+      <a href="AkanName.html" class="start-button">Get Started</a>
+    </div>
+  </header>
+</body>
+</html>
