@@ -1,17 +1,17 @@
-
 /* General Styles */
 body {
     font-family: 'Graduate', cursive;
     margin: 0;
     padding: 0;
-    background: url('"C:\Users\330s\OneDrive\Desktop\AkanName\html\Images\Ghanaian.jpg"') no-repeat center center fixed;
+    background-image: url("../Images/Africa.jpg");
     background-size: cover;
-    color: #fff;
+    background-position: center;
+    color: #000;
 }
 
 /* Navigation Bar */
 nav {
-    background: url('"C:\Users\330s\OneDrive\Desktop\AkanName\html\Images\Africa.jpg"') no-repeat center center;
+    background: url("../Images/Ghanaian.jpg") no-repeat center center;
     background-size: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 1rem 0;
@@ -124,5 +124,3 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-
