@@ -3,27 +3,25 @@ body {
     font-family: 'Graduate', cursive;
     margin: 0;
     padding: 0;
-    background-image: url("../Images/Africa.jpg");
-    background-size: cover;
-    background-position: center;
+    background: url("../Images/Ghana.jpg") center/cover no-repeat;
     color: #000;
 }
 
 /* Navigation Bar */
 nav {
-    background: url("../Images/Ghanaian.jpg") no-repeat center center;
-    background-size: cover;
+    background: url("../Images/Ghana.jpg") center/cover no-repeat;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    padding: 1rem 0;
+    padding: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 2rem;
     border-bottom: 5px solid #ff0000; /* Red stripe */
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
-    margin: 0 1rem;
     font-weight: bold;
     font-size: 1.2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -40,7 +38,8 @@ header {
     text-align: center;
     padding: 2rem 1rem;
     background: rgba(0, 0, 0, 0.7);
-    margin: 2rem;
+    margin: 2rem auto;
+    width: 90%;
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
@@ -55,6 +54,30 @@ header h1 {
 header p {
     font-size: 1.5rem;
     color: #f1f1f1;
+}
+
+/* Introduction Section */
+#Introduction {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#Introduction h2 {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#Introduction p {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #333;
 }
 
 /* Form Card */
@@ -78,13 +101,14 @@ label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
+    color: #fff;
 }
 
 input[type="date"], select {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
     background: #fff;
     color: #000;
@@ -100,11 +124,12 @@ button {
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 button:hover {
     background: #388e3c; /* Darker Green */
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -116,11 +141,37 @@ footer {
     margin-top: 2rem;
 }
 
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
 footer a {
     color: #fcd20b; /* Yellow */
     text-decoration: none;
+    transition: text-decoration 0.3s;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    header {
+        width: 95%;
+    }
+
+    #Introduction {
+        width: 95%;
+    }
+
+    .card {
+        width: 95%;
+    }
 }
