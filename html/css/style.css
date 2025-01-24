@@ -1,18 +1,20 @@
 /* General Styles */
 body {
-    font-family: 'Graduate', cursive;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('../Images/Ghana.jpg') no-repeat center center fixed;
-    background-size: cover;
     color: #333;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Navigation Bar */
 nav {
-    background: url('../Images/Ghanaian.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -22,9 +24,9 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: bold;
+    color: #fcd20b;
+    font-size: 1rem;
+    font-weight: 600;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     border-radius: 8px;
@@ -32,92 +34,54 @@ nav a {
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.8);
-    color: #333;
+    background: #fcd20b;
+    color: #000;
     transform: scale(1.1);
 }
 
-/* Header */
-header {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
-    font-size: 3rem;
-    font-family: 'Pacifico', cursive;
-    color: #ff5733;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-header p {
-    font-size: 1.5rem;
-    color: #555;
-}
-
-/* Introduction */
-#Introduction .content {
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem auto;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 800px;
-}
-
-/* Form Card */
-.card {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 400px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    animation: float 2s infinite ease-in-out alternate;
-}
-
-.card h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #ff5733;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #333;
-}
-
-input[type="date"], select {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-button {
-    width: 100%;
-    padding: 0.75rem;
-    background: #ff5733;
+/* Full-Screen Welcome Banner */
+.full-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../Images/Ghana.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+    text-align: center;
+    position: relative;
 }
 
-button:hover {
-    background: #e74c3c;
-    transform: scale(1.05);
+.full-screen .welcome-content h1 {
+    font-size: 3.5rem;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+}
+
+.full-screen .welcome-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Introduction Section */
+.scroll-section {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    text-align: center;
+}
+
+.scroll-section .content h2 {
+    font-size: 2.5rem;
+    color: #fcd20b;
+    margin-bottom: 1.5rem;
+}
+
+.scroll-section .content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 /* Footer */
@@ -125,23 +89,31 @@ footer {
     text-align: center;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    color: #fcd20b;
     margin-top: 2rem;
 }
 
 footer p {
     font-size: 1rem;
     margin: 0;
-    animation: fade-in 2s ease-in-out;
 }
 
-/* Keyframes for Animation */
-@keyframes float {
-    from { transform: translateY(0); }
-    to { transform: translateY(-10px); }
-}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 
-@keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    .full-screen .welcome-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .scroll-section .content h2 {
+        font-size: 2rem;
+    }
 }
