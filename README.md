@@ -22,8 +22,24 @@ This is a website that has been created to calculate and give you a unique Akan 
 ## How to use
 Open the index.html file in your preferred web browser.
 Use the navigation bar to explore different sections of the application.
-Learn about Akan names in the Introduction section.
-Click on "Find Your Akan Name" to input your birth date and gender and discover your unique Akan name.
+Learn about Akan names in the Introduction section by scrolling down.
+Click on "Find Your Akan Name" to input your birth date and gender (Ensure to fill in a valid birthdate) and discover your unique Akan name.
+A new page opens and your name is provided.
 
+## BDD
+1. Landing Page - as the user I'd want to see the description of the website on the landing page
+2. Input Form - as the user, I want to be able to key in my birthdate and gender in a simple form
+3. Akan Name Output - as a user I'd like to be able to see my new name based on the week I was born
+4. Validation- as a user I should be able to receive an alert to show an invalid date or month that I had entered
+
+## Technologies used
+HTML - for structuring the web page 
+CSS - for designing the website 
+JavaScript - for implementing the website logic 
+
+## Contact information
+For feedback :
+Email: sayilisaalusa@gmail.com or lisa.sayi@student.moringaschool.com
+GitHub: 
 ## License
 This project is licensed under the MIT License.
