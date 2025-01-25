@@ -40,7 +40,6 @@ JavaScript - for implementing the website logic
 ## Contact information
 For feedback :
 Email: sayilisaalusa@gmail.com or lisa.sayi@student.moringaschool.com
-
 GitHub: https://github.com/Alusa05/ProjectAkan
 ## License
 This project is licensed under the MIT License.
