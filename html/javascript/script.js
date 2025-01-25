@@ -48,6 +48,6 @@ document.getElementById("name-form").addEventListener("submit", function(event) 
     // Get Akan name
     const akanName = getAkanName(dayOfWeek, gender);
 
-    // Display result
-    alert(`Your Akan name is ${akanName}`);
+   // Redirect to result page with query parameters
+   window.location.href = `result.html?akanName=${akanName}&gender=${gender}`;
 });

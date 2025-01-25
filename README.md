@@ -14,6 +14,7 @@ This is a website that has been created to calculate and give you a unique Akan 
 `welcomingpage.html`: This is an introductory HTML file that contains information about Akan Essence
 `AkanName.html`: This is the main HTML file containing the structure of the web page including navigation, welcome section, etc
 `contact.html`: This includes an interactive form for users to give their messages
+`result.html`: Provides the result after filling in the form
 `style.css`: Contains the styling and layout for the page. This file ensures the page is visually appealing and responsive.
 `Images/`: A folder containing image files for the background image of the home page and navigation bar
 `script.js`: Adds functionality when calculating the Akan name based on the user's input
