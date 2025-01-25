@@ -17,7 +17,7 @@ document.getElementById("akan-form").addEventListener("submit", function(event) 
     const century = Math.floor(year / 100);
     const yearDigits = year % 100;
     const dayOfWeek = Math.floor(
-        ( (century / 4) - 2 * century - 1 + (5 * yearDigits / 4) + (26 * (month + 1) / 10) + day ) % 7
+        ( ( (century / 4) - 2 * century - 1 + (5 * yearDigits / 4) + (26 * (month + 1) / 10) + day ) % 7 + 7 ) % 7
     );
 
     // Akan names
@@ -26,6 +26,11 @@ document.getElementById("akan-form").addEventListener("submit", function(event) 
 
     const akanName = gender === "male" ? maleNames[dayOfWeek] : femaleNames[dayOfWeek];
 
-    // Display the Akan name
-    document.getElementById("result").innerText = `Your Akan name is ${akanName}`;
+    // Show pop-up
+    document.getElementById("akan-name").textContent = akanName;
+    document.getElementById("popup").style.display = "block";
 });
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}

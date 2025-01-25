@@ -137,7 +137,7 @@
 
     <main>
         <div class="card">
-            <form id="name-form" action="result.html" method="post">
+            <form id="name-form" action="FAN.html" method="post">
                 <h2>Kindly Fill In Your Details</h2>
                 <label for="birthday">Birthday:</label>
                 <input type="date" id="birthday" name="birthday" required>
@@ -148,11 +148,18 @@
                     <option value="female">Female</option>
                 </select>
 
-                <button type="submit">Submit</button>
+                <button type="button" onclick="calculateAkanName()">Submit</button>
             </form>
         </div>
     </main>
+    <!-- Pop-Up Section -->
+    <div class="popup" id="popup">
+        <h2>Congratulations!</h2>
+        <p>Your Akan name is: <strong id="akan-name"></strong></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
 
-    
+        <!-- JavaScript -->
+        <script src="javascript/script.js"></script>
 </body>
 </html>
