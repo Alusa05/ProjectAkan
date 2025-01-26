@@ -1,5 +1,8 @@
-# Akan Essence- Discover your Spirit
+## Project Name
+The name of this project is Akan Essence
 
+## Author 
+This code/website was developed by Lisa Alusa Sayi 
 
 ## Description
 This is a website that has been created to calculate and give you a unique Akan name based on your birth date and gender. 
