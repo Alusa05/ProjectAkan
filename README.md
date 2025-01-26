@@ -1,5 +1,5 @@
 ## Project Name
-The name of this project is Akan Essence
+The name of this project is Akan Essence- Discover your Spirit
 
 ## Author 
 This code/website was developed by Lisa Alusa Sayi 
