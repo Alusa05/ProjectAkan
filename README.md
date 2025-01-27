@@ -35,6 +35,13 @@ A new page opens and your name is provided.
 3. Akan Name Output - as a user I'd like to be able to see my new name based on the week I was born
 4. Validation- as a user I should be able to receive an alert to show an invalid date or month that I had entered
 
+For example
+Input: Birth date and gender
+Output: Akan name based on day of birth and gender
+
+Input: Invalid date (day ≤ 0 or day > 31)
+Output: Error message requesting valid date
+
 ## Technologies used
 HTML - for structuring the web page 
 CSS - for designing the website 
